@@ -1,0 +1,28 @@
+{
+  "name": "stat-pack-npm",
+  "version": "0.0.1",
+  "description": "Descubra como está o tempo em qualquer cidade do Brasil",
+  "repository": "https://github.com/davidalves1/stat-pack-npm",
+  "main": "index.js",
+  "bin": {
+    "stat": "./bin/index.js"
+  },
+  "preferGlobal": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "stat",
+    "package",
+    "statistcs"
+  ],
+  "author": "David Alves de Souza <alves.david@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidalves1/stat-pack-npm/issues"
+  },
+  "dependencies": {
+    "meow": "^3.7.0"
+  }
+}
