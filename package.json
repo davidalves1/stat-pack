@@ -1,11 +1,11 @@
 {
-  "name": "stat-pack-npm",
-  "version": "0.0.1",
+  "name": "stat-pack",
+  "version": "0.1.1",
   "description": "Veja as estatísticas de um pacote NPM",
   "repository": "https://github.com/davidalves1/stat-pack-npm",
   "main": "index.js",
   "bin": {
-    "stat": "./bin/index.js"
+    "stat-pack": "./bin/index.js"
   },
   "preferGlobal": "true",
   "scripts": {

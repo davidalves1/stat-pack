@@ -1,11 +1,11 @@
-# stat-pack-npm
+# stat-pack
 
 Verifique as estatísticas dos pacotes do NPM
 
 ## Instalação
 
 ```shell
-$ npm install -g stat-pack-npm
+$ npm install -g stat-pack
 ```
 
 ## Opções
@@ -21,12 +21,12 @@ $ npm install -g stat-pack-npm
 ```shell
 $ stat clima-app
 	  
-$ stat clima app -p last-week  
+$ stat clima-app -p last-week  
 ``` 
 
 ### Contribuições
 
-Crie uma [issue](https://github.com/davidalves1/stat-pack-npm/issues/new) ou envie um **pull request** e nos ajude a melhorar o projeto, toda contribuição é muito bem vinda!
+Crie uma [issue](https://github.com/davidalves1/stat-pack/issues/new) ou envie um **pull request** e nos ajude a melhorar o projeto, toda contribuição é muito bem vinda!
 
 ### Licença
 
