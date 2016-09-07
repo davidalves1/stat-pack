@@ -8,12 +8,21 @@ Verifique as estatísticas dos pacotes do NPM
 $ npm install -g stat-pack-npm
 ```
 
+## Opções
+
+```shell
+--period, -p Define um período: last-day, last-week, last-month
+
+--help, -h Manual de ajuda
+```    
+
 ## Modo de usar
 
-<!-- ```shell
-$ tempo <cidade>
-$ tempo São Paulo
-``` -->
+```shell
+    $ stat clima-app
+	  
+    $ stat clima app -p last-week  
+``` 
 
 ### Contribuições
 

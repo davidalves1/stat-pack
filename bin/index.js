@@ -7,20 +7,25 @@ const querystring = require('querystring');
 const meow = require('meow');
 
 const cli = meow(`
-    Modo de uso:
+    Modo de uso
       $ stat <pacote-name> 
 
     Options
       --period, -p Define um período: last-day, last-week, last-month
 
-    Exemplo:
+      --help, -h Este manual de ajuda
+
+    Exemplos
       $ stat clima-app
+	  
+      $ stat clima app -p last-week  
+`, {
+	alias: {
+		p: 'period'
+	}
+});
 
-
-
-`, {});
-
-let pacote = cli.input.join(' ');
+let pacote = cli.input;
 
 if (pacote.length === 0) {
 	console.log('Ops, você precisa informar um pacote!');
@@ -28,6 +33,11 @@ if (pacote.length === 0) {
 }
 
 let period = 'last-month';
+
+let option = cli.flags;
+
+if (option.period !== undefined)
+	period = option.period;
 
 https
 	.get(`https://api.npmjs.org/downloads/point/${period}/${pacote}`, 
