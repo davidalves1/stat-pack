@@ -19,9 +19,9 @@ $ npm install -g stat-pack-npm
 ## Modo de usar
 
 ```shell
-    $ stat clima-app
+$ stat clima-app
 	  
-    $ stat clima app -p last-week  
+$ stat clima app -p last-week  
 ``` 
 
 ### Contribuições
