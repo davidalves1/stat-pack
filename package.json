@@ -1,7 +1,7 @@
 {
   "name": "stat-pack-npm",
   "version": "0.0.1",
-  "description": "Descubra como está o tempo em qualquer cidade do Brasil",
+  "description": "Veja as estatísticas de um pacote NPM",
   "repository": "https://github.com/davidalves1/stat-pack-npm",
   "main": "index.js",
   "bin": {
