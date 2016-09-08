@@ -1,8 +1,8 @@
 {
   "name": "stat-pack",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "Veja as estatísticas de um pacote NPM",
-  "repository": "https://github.com/davidalves1/stat-pack-npm",
+  "repository": "https://github.com/davidalves1/stat-pack",
   "main": "index.js",
   "bin": {
     "stat-pack": "./bin/index.js"
@@ -20,7 +20,7 @@
   "author": "David Alves de Souza <alves.david@outlook.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/davidalves1/stat-pack-npm/issues"
+    "url": "https://github.com/davidalves1/stat-pack/issues"
   },
   "dependencies": {
     "meow": "^3.7.0"
