@@ -21,7 +21,8 @@ const cli = meow(`
       $ stat clima-app -p last-week  
 `, {
 	alias: {
-		p: 'period'
+		p: 'period',
+		h: 'help'
 	}
 });
 
@@ -51,12 +52,13 @@ if (valido.length === 0) {
 https
 	.get(`https://api.npmjs.org/downloads/point/${period}/${pacote}`, (response) => {
 		let body = '';
+
 		response.on('data', (data) => {
 			body += data;
 		});
 
 		response.on('error', (e) => {
-			console.log('\nOps, pacote não encontrado! :(\n');
+			console.log('\nOps, parece que algo de errado aconteceu! Informe o problema no link: https://github.com/davidalves1/stat-pack/issues/new\n');
 		});
 
 		response.on('end', () => {
@@ -65,10 +67,12 @@ https
 			if (results.error !== undefined)
 				console.log(`Ops, parece que o pacote ${pacote} não foi encontrado`);
 			else
-				console.log(`O pacote ${pacote} teve ${results.downloads} downloads entre os dias ${formatDate(results.start)} e ${formatDate(results.end)}`);
+				// Verifica o período consultado para exibir a mensagem compatível
+				console.log(`O pacote ${pacote} teve ${results.downloads} downloads`,
+					period == 'last-day' ? `no dia ${formatDate(results.start)}` : `entre os dias ${formatDate(results.start)} e ${formatDate(results.end)}`);
 		});
 	});
 
 function formatDate(word) {
-	return word.split('-').reverse().join('-')
+	return word.split('-').reverse().join('/')
 }
