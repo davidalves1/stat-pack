@@ -1,6 +1,6 @@
 # stat-pack
 
-Verifique as estatísticas dos pacotes do NPM
+Verifique as estatísticas de um pacote NPM
 
 ## Instalação
 
