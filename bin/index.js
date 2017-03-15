@@ -16,9 +16,9 @@ const cli = meow(`
       --help, -h Este manual de ajuda
 
     Exemplos
-      $ stat clima-app
+      $ stat-pack clima-app
 	  
-      $ stat clima-app -p last-week  
+      $ stat-pack clima-app -p last-week  
 `, {
 	alias: {
 		p: 'period',
